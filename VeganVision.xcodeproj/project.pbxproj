@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5F303C2292969BD00E41C7D /* VeganVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F303C1292969BD00E41C7D /* VeganVisionApp.swift */; };
 		B5F303C4292969BD00E41C7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F303C3292969BD00E41C7D /* ContentView.swift */; };
 		B5F303C6292969BE00E41C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F303C5292969BE00E41C7D /* Assets.xcassets */; };
 		B5F303C9292969BE00E41C7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F303C8292969BE00E41C7D /* Preview Assets.xcassets */; };
@@ -46,6 +45,10 @@
 		B5F3042D2942C3A000E41C7D /* ScanOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042C2942C3A000E41C7D /* ScanOptionViewController.swift */; };
 		B5F3042F2942C3B400E41C7D /* ScanOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042E2942C3B400E41C7D /* ScanOptionView.swift */; };
 		B5F304312942C3CD00E41C7D /* ScanOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304302942C3CD00E41C7D /* ScanOptionViewModel.swift */; };
+		B5F304362942D7F700E41C7D /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304352942D7F700E41C7D /* CameraManager.swift */; };
+		B5F3043A2942D86600E41C7D /* NonVeganCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304382942D86600E41C7D /* NonVeganCollection.swift */; };
+		B5F3043B2942D86600E41C7D /* OCRUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304392942D86600E41C7D /* OCRUtil.swift */; };
+		B5F3043D2942E63300E41C7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3043C2942E63300E41C7D /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +70,6 @@
 
 /* Begin PBXFileReference section */
 		B5F303BE292969BD00E41C7D /* VeganVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeganVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5F303C1292969BD00E41C7D /* VeganVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganVisionApp.swift; sourceTree = "<group>"; };
 		B5F303C3292969BD00E41C7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5F303C5292969BE00E41C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F303C8292969BE00E41C7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -108,6 +110,10 @@
 		B5F3042C2942C3A000E41C7D /* ScanOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionViewController.swift; sourceTree = "<group>"; };
 		B5F3042E2942C3B400E41C7D /* ScanOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionView.swift; sourceTree = "<group>"; };
 		B5F304302942C3CD00E41C7D /* ScanOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionViewModel.swift; sourceTree = "<group>"; };
+		B5F304352942D7F700E41C7D /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		B5F304382942D86600E41C7D /* NonVeganCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonVeganCollection.swift; sourceTree = "<group>"; };
+		B5F304392942D86600E41C7D /* OCRUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRUtil.swift; sourceTree = "<group>"; };
+		B5F3043C2942E63300E41C7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,12 +164,14 @@
 		B5F303C0292969BD00E41C7D /* VeganVision */ = {
 			isa = PBXGroup;
 			children = (
-				B5F303C1292969BD00E41C7D /* VeganVisionApp.swift */,
+				B5F3043C2942E63300E41C7D /* SceneDelegate.swift */,
 				B5F3042629296BBA00E41C7D /* AppDelegate.swift */,
+				B5F304342942D7EC00E41C7D /* Camera */,
 				B5F303EB292969FD00E41C7D /* Screens */,
 				B5F303C3292969BD00E41C7D /* ContentView.swift */,
 				B5F303C5292969BE00E41C7D /* Assets.xcassets */,
-				B5F303EF29296A3100E41C7D /* fonts */,
+				B5F304372942D85A00E41C7D /* Util */,
+				B5F303EF29296A3100E41C7D /* Fonts */,
 				B5F303C7292969BE00E41C7D /* Preview Content */,
 			);
 			path = VeganVision;
@@ -236,7 +244,7 @@
 			path = Analysis;
 			sourceTree = "<group>";
 		};
-		B5F303EF29296A3100E41C7D /* fonts */ = {
+		B5F303EF29296A3100E41C7D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				B5F303F729296A4B00E41C7D /* Poppins-Black.ttf */,
@@ -258,7 +266,7 @@
 				B5F303F929296A4B00E41C7D /* Poppins-Thin.ttf */,
 				B5F303F629296A4B00E41C7D /* Poppins-ThinItalic.ttf */,
 			);
-			path = fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		B5F3042B2942C37E00E41C7D /* ScanOption */ = {
@@ -269,6 +277,23 @@
 				B5F304302942C3CD00E41C7D /* ScanOptionViewModel.swift */,
 			);
 			path = ScanOption;
+			sourceTree = "<group>";
+		};
+		B5F304342942D7EC00E41C7D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B5F304352942D7F700E41C7D /* CameraManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B5F304372942D85A00E41C7D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B5F304382942D86600E41C7D /* NonVeganCollection.swift */,
+				B5F304392942D86600E41C7D /* OCRUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,19 +447,22 @@
 				B5F3042729296BBA00E41C7D /* AppDelegate.swift in Sources */,
 				B5F3041929296AB400E41C7D /* WelcomeView.swift in Sources */,
 				B5F3041F29296AE400E41C7D /* WelcomeViewController.swift in Sources */,
+				B5F3043A2942D86600E41C7D /* NonVeganCollection.swift in Sources */,
 				B5F3041B29296AC300E41C7D /* WelcomeViewModel.swift in Sources */,
 				B5F3042D2942C3A000E41C7D /* ScanOptionViewController.swift in Sources */,
 				B5F3042529296B3000E41C7D /* ScanViewModel.swift in Sources */,
 				B5F3042F2942C3B400E41C7D /* ScanOptionView.swift in Sources */,
 				B5F303C4292969BD00E41C7D /* ContentView.swift in Sources */,
+				B5F3043B2942D86600E41C7D /* OCRUtil.swift in Sources */,
 				B5F3041D29296AD600E41C7D /* AnalysisViewController.swift in Sources */,
 				B5F3042929296CC200E41C7D /* Constants.swift in Sources */,
 				B5F3041529296A8D00E41C7D /* AnalysisView.swift in Sources */,
 				B5F3041729296AA100E41C7D /* AnalysisViewModel.swift in Sources */,
 				B5F3042329296B2200E41C7D /* ScanView.swift in Sources */,
-				B5F303C2292969BD00E41C7D /* VeganVisionApp.swift in Sources */,
 				B5F304312942C3CD00E41C7D /* ScanOptionViewModel.swift in Sources */,
+				B5F3043D2942E63300E41C7D /* SceneDelegate.swift in Sources */,
 				B5F3042129296AF200E41C7D /* ScanViewController.swift in Sources */,
+				B5F304362942D7F700E41C7D /* CameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +627,6 @@
 				INFOPLIST_FILE = VeganVision/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Vegan Vision";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -630,7 +657,6 @@
 				INFOPLIST_FILE = VeganVision/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Vegan Vision";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

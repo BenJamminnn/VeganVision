@@ -34,7 +34,7 @@ class WelcomeViewController: UIHostingController<WelcomeView> {
             .receive(on: RunLoop.main)
             .sink { [weak self] in
                 guard let self = self else { return }
-                let mainViewController = UIViewController()
+                let mainViewController = ScanOptionViewController()
                 self.navigationController?.pushViewController(mainViewController, animated: true)
             }
             .store(in: &cancellables)
