@@ -14,6 +14,7 @@ struct AnalysisView: View {
     var body: some View {
         VStack {
             title
+                .padding(.vertical, 22)
             mainBody()
             Spacer()
             scanAgainButton
@@ -29,23 +30,35 @@ struct AnalysisView: View {
             unpopulatedView
         } else {
             populatedView
+                .padding()
         }
     }
     
     var populatedView: some View {
-        ScrollView {
-            ForEach(viewModel.offendingWords, id: \.self) { word in
-                Text(word)
-                    .font(AppFont.mediumFont(size: 20).font)
+        VStack {
+            Text("\(viewModel.offendingWords.count) non vegan ingredients found!")
+                .font(AppFont.mediumFont(size: 18).font)
+                .padding()
+
+            ScrollView {
+                ForEach(viewModel.offendingWords, id: \.self) { word in
+                    Text(word)
+                        .font(AppFont.mediumFont(size: 20).font)
+                }
             }
         }
         .padding()
+        .frame(maxWidth: .infinity)
         .background(Color(green300))
-        .clipShape(Capsule())
+        .cornerRadius(20)
     }
-    
+
     var unpopulatedView: some View {
-        VStack {}
+        Text("No non vegan ingredients found!")
+            .padding()
+            .font(AppFont.semiBoldFont(size: 26).font)
+            .background(Color(green300))
+            .cornerRadius(20)
     }
     
     var title: some View {
