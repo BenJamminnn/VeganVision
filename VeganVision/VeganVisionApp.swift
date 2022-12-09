@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct VeganVisionApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = WelcomeViewModel()
+            WelcomeView(viewModel: viewModel)
         }
     }
 }

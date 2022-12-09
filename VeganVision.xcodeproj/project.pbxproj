@@ -14,6 +14,35 @@
 		B5F303D3292969BE00E41C7D /* VeganVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F303D2292969BE00E41C7D /* VeganVisionTests.swift */; };
 		B5F303DD292969BE00E41C7D /* VeganVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F303DC292969BE00E41C7D /* VeganVisionUITests.swift */; };
 		B5F303DF292969BE00E41C7D /* VeganVisionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F303DE292969BE00E41C7D /* VeganVisionUITestsLaunchTests.swift */; };
+		B5F3040229296A4B00E41C7D /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F029296A4A00E41C7D /* Poppins-ExtraLightItalic.ttf */; };
+		B5F3040329296A4B00E41C7D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F129296A4A00E41C7D /* Poppins-Bold.ttf */; };
+		B5F3040429296A4B00E41C7D /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F229296A4B00E41C7D /* Poppins-BlackItalic.ttf */; };
+		B5F3040529296A4B00E41C7D /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F329296A4B00E41C7D /* Poppins-Regular.ttf */; };
+		B5F3040629296A4B00E41C7D /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F429296A4B00E41C7D /* Poppins-SemiBoldItalic.ttf */; };
+		B5F3040729296A4B00E41C7D /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F529296A4B00E41C7D /* Poppins-SemiBold.ttf */; };
+		B5F3040829296A4B00E41C7D /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F629296A4B00E41C7D /* Poppins-ThinItalic.ttf */; };
+		B5F3040929296A4B00E41C7D /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F729296A4B00E41C7D /* Poppins-Black.ttf */; };
+		B5F3040A29296A4B00E41C7D /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F829296A4B00E41C7D /* Poppins-ExtraBoldItalic.ttf */; };
+		B5F3040B29296A4B00E41C7D /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303F929296A4B00E41C7D /* Poppins-Thin.ttf */; };
+		B5F3040C29296A4B00E41C7D /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303FA29296A4B00E41C7D /* Poppins-LightItalic.ttf */; };
+		B5F3040D29296A4B00E41C7D /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303FB29296A4B00E41C7D /* Poppins-Medium.ttf */; };
+		B5F3040E29296A4B00E41C7D /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303FC29296A4B00E41C7D /* Poppins-ExtraBold.ttf */; };
+		B5F3040F29296A4B00E41C7D /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303FD29296A4B00E41C7D /* Poppins-MediumItalic.ttf */; };
+		B5F3041029296A4B00E41C7D /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303FE29296A4B00E41C7D /* Poppins-Light.ttf */; };
+		B5F3041129296A4B00E41C7D /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F303FF29296A4B00E41C7D /* Poppins-Italic.ttf */; };
+		B5F3041229296A4B00E41C7D /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F3040029296A4B00E41C7D /* Poppins-ExtraLight.ttf */; };
+		B5F3041329296A4B00E41C7D /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5F3040129296A4B00E41C7D /* Poppins-BoldItalic.ttf */; };
+		B5F3041529296A8D00E41C7D /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041429296A8D00E41C7D /* AnalysisView.swift */; };
+		B5F3041729296AA100E41C7D /* AnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041629296AA100E41C7D /* AnalysisViewModel.swift */; };
+		B5F3041929296AB400E41C7D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041829296AB400E41C7D /* WelcomeView.swift */; };
+		B5F3041B29296AC300E41C7D /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041A29296AC300E41C7D /* WelcomeViewModel.swift */; };
+		B5F3041D29296AD600E41C7D /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041C29296AD600E41C7D /* AnalysisViewController.swift */; };
+		B5F3041F29296AE400E41C7D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041E29296AE400E41C7D /* WelcomeViewController.swift */; };
+		B5F3042129296AF200E41C7D /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042029296AF200E41C7D /* ScanViewController.swift */; };
+		B5F3042329296B2200E41C7D /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042229296B2200E41C7D /* ScanView.swift */; };
+		B5F3042529296B3000E41C7D /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042429296B3000E41C7D /* ScanViewModel.swift */; };
+		B5F3042729296BBA00E41C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042629296BBA00E41C7D /* AppDelegate.swift */; };
+		B5F3042929296CC200E41C7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042829296CC200E41C7D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +73,35 @@
 		B5F303D8292969BE00E41C7D /* VeganVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeganVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F303DC292969BE00E41C7D /* VeganVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganVisionUITests.swift; sourceTree = "<group>"; };
 		B5F303DE292969BE00E41C7D /* VeganVisionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganVisionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5F303F029296A4A00E41C7D /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		B5F303F129296A4A00E41C7D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		B5F303F229296A4B00E41C7D /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B5F303F329296A4B00E41C7D /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		B5F303F429296A4B00E41C7D /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		B5F303F529296A4B00E41C7D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		B5F303F629296A4B00E41C7D /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		B5F303F729296A4B00E41C7D /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		B5F303F829296A4B00E41C7D /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B5F303F929296A4B00E41C7D /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		B5F303FA29296A4B00E41C7D /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		B5F303FB29296A4B00E41C7D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		B5F303FC29296A4B00E41C7D /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B5F303FD29296A4B00E41C7D /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B5F303FE29296A4B00E41C7D /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		B5F303FF29296A4B00E41C7D /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		B5F3040029296A4B00E41C7D /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		B5F3040129296A4B00E41C7D /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B5F3041429296A8D00E41C7D /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		B5F3041629296AA100E41C7D /* AnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewModel.swift; sourceTree = "<group>"; };
+		B5F3041829296AB400E41C7D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B5F3041A29296AC300E41C7D /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		B5F3041C29296AD600E41C7D /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		B5F3041E29296AE400E41C7D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B5F3042029296AF200E41C7D /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		B5F3042229296B2200E41C7D /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		B5F3042429296B3000E41C7D /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		B5F3042629296BBA00E41C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5F3042829296CC200E41C7D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +153,11 @@
 			isa = PBXGroup;
 			children = (
 				B5F303C1292969BD00E41C7D /* VeganVisionApp.swift */,
+				B5F3042629296BBA00E41C7D /* AppDelegate.swift */,
+				B5F303EB292969FD00E41C7D /* Screens */,
 				B5F303C3292969BD00E41C7D /* ContentView.swift */,
 				B5F303C5292969BE00E41C7D /* Assets.xcassets */,
+				B5F303EF29296A3100E41C7D /* fonts */,
 				B5F303C7292969BE00E41C7D /* Preview Content */,
 			);
 			path = VeganVision;
@@ -125,6 +186,72 @@
 				B5F303DE292969BE00E41C7D /* VeganVisionUITestsLaunchTests.swift */,
 			);
 			path = VeganVisionUITests;
+			sourceTree = "<group>";
+		};
+		B5F303EB292969FD00E41C7D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B5F303EE29296A1600E41C7D /* Analysis */,
+				B5F303ED29296A1000E41C7D /* Scan */,
+				B5F303EC29296A0500E41C7D /* Welcome */,
+				B5F3042829296CC200E41C7D /* Constants.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B5F303EC29296A0500E41C7D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3041829296AB400E41C7D /* WelcomeView.swift */,
+				B5F3041A29296AC300E41C7D /* WelcomeViewModel.swift */,
+				B5F3041E29296AE400E41C7D /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B5F303ED29296A1000E41C7D /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3042029296AF200E41C7D /* ScanViewController.swift */,
+				B5F3042229296B2200E41C7D /* ScanView.swift */,
+				B5F3042429296B3000E41C7D /* ScanViewModel.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		B5F303EE29296A1600E41C7D /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3041429296A8D00E41C7D /* AnalysisView.swift */,
+				B5F3041629296AA100E41C7D /* AnalysisViewModel.swift */,
+				B5F3041C29296AD600E41C7D /* AnalysisViewController.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		B5F303EF29296A3100E41C7D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B5F303F729296A4B00E41C7D /* Poppins-Black.ttf */,
+				B5F303F229296A4B00E41C7D /* Poppins-BlackItalic.ttf */,
+				B5F303F129296A4A00E41C7D /* Poppins-Bold.ttf */,
+				B5F3040129296A4B00E41C7D /* Poppins-BoldItalic.ttf */,
+				B5F303FC29296A4B00E41C7D /* Poppins-ExtraBold.ttf */,
+				B5F303F829296A4B00E41C7D /* Poppins-ExtraBoldItalic.ttf */,
+				B5F3040029296A4B00E41C7D /* Poppins-ExtraLight.ttf */,
+				B5F303F029296A4A00E41C7D /* Poppins-ExtraLightItalic.ttf */,
+				B5F303FF29296A4B00E41C7D /* Poppins-Italic.ttf */,
+				B5F303FE29296A4B00E41C7D /* Poppins-Light.ttf */,
+				B5F303FA29296A4B00E41C7D /* Poppins-LightItalic.ttf */,
+				B5F303FB29296A4B00E41C7D /* Poppins-Medium.ttf */,
+				B5F303FD29296A4B00E41C7D /* Poppins-MediumItalic.ttf */,
+				B5F303F329296A4B00E41C7D /* Poppins-Regular.ttf */,
+				B5F303F529296A4B00E41C7D /* Poppins-SemiBold.ttf */,
+				B5F303F429296A4B00E41C7D /* Poppins-SemiBoldItalic.ttf */,
+				B5F303F929296A4B00E41C7D /* Poppins-Thin.ttf */,
+				B5F303F629296A4B00E41C7D /* Poppins-ThinItalic.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +358,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F3040229296A4B00E41C7D /* Poppins-ExtraLightItalic.ttf in Resources */,
+				B5F3041029296A4B00E41C7D /* Poppins-Light.ttf in Resources */,
+				B5F3040F29296A4B00E41C7D /* Poppins-MediumItalic.ttf in Resources */,
+				B5F3040E29296A4B00E41C7D /* Poppins-ExtraBold.ttf in Resources */,
+				B5F3040D29296A4B00E41C7D /* Poppins-Medium.ttf in Resources */,
+				B5F3040C29296A4B00E41C7D /* Poppins-LightItalic.ttf in Resources */,
 				B5F303C9292969BE00E41C7D /* Preview Assets.xcassets in Resources */,
+				B5F3040429296A4B00E41C7D /* Poppins-BlackItalic.ttf in Resources */,
+				B5F3040629296A4B00E41C7D /* Poppins-SemiBoldItalic.ttf in Resources */,
+				B5F3040929296A4B00E41C7D /* Poppins-Black.ttf in Resources */,
+				B5F3040529296A4B00E41C7D /* Poppins-Regular.ttf in Resources */,
+				B5F3040A29296A4B00E41C7D /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				B5F3041129296A4B00E41C7D /* Poppins-Italic.ttf in Resources */,
+				B5F3040729296A4B00E41C7D /* Poppins-SemiBold.ttf in Resources */,
+				B5F3041229296A4B00E41C7D /* Poppins-ExtraLight.ttf in Resources */,
+				B5F3040829296A4B00E41C7D /* Poppins-ThinItalic.ttf in Resources */,
+				B5F3040B29296A4B00E41C7D /* Poppins-Thin.ttf in Resources */,
 				B5F303C6292969BE00E41C7D /* Assets.xcassets in Resources */,
+				B5F3040329296A4B00E41C7D /* Poppins-Bold.ttf in Resources */,
+				B5F3041329296A4B00E41C7D /* Poppins-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +402,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F3042729296BBA00E41C7D /* AppDelegate.swift in Sources */,
+				B5F3041929296AB400E41C7D /* WelcomeView.swift in Sources */,
+				B5F3041F29296AE400E41C7D /* WelcomeViewController.swift in Sources */,
+				B5F3041B29296AC300E41C7D /* WelcomeViewModel.swift in Sources */,
+				B5F3042529296B3000E41C7D /* ScanViewModel.swift in Sources */,
 				B5F303C4292969BD00E41C7D /* ContentView.swift in Sources */,
+				B5F3041D29296AD600E41C7D /* AnalysisViewController.swift in Sources */,
+				B5F3042929296CC200E41C7D /* Constants.swift in Sources */,
+				B5F3041529296A8D00E41C7D /* AnalysisView.swift in Sources */,
+				B5F3041729296AA100E41C7D /* AnalysisViewModel.swift in Sources */,
+				B5F3042329296B2200E41C7D /* ScanView.swift in Sources */,
 				B5F303C2292969BD00E41C7D /* VeganVisionApp.swift in Sources */,
+				B5F3042129296AF200E41C7D /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +576,13 @@
 				DEVELOPMENT_TEAM = RDT7K59Q4P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VeganVision/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vegan Vision";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +607,13 @@
 				DEVELOPMENT_TEAM = RDT7K59Q4P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VeganVision/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vegan Vision";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
