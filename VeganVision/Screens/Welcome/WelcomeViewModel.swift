@@ -6,7 +6,8 @@
 //
 
 import UIKit
+import Combine
 
 class WelcomeViewModel: ObservableObject {
-
+    let getStartedPressed = PassthroughSubject<Void, Never>()
 }

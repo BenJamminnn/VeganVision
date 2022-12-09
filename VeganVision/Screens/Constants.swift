@@ -9,33 +9,35 @@ import Foundation
 import UIKit
 import SwiftUI
 
-struct AppFont {
-    static var lightFont: Font {
-        guard let font = UIFont(name: "Poppins-Light", size: 32) else {
-            fatalError("Could not resolve font")
-        }
-        return Font(font)
-    }
+enum AppFont {
+    case lightFont(size: CGFloat)
+    case mediumFont(size: CGFloat)
+    case semiBoldFont(size: CGFloat)
+    case boldFont(size: CGFloat)
     
-    static var mediumFont: Font {
-        guard let font = UIFont(name: "Poppins-Medium", size: 32) else {
-            fatalError("Could not resolve font")
+    var font: Font {
+        switch self {
+        case .lightFont(let size):
+            guard let font = UIFont(name: "Poppins-Light", size: size) else {
+                fatalError("Could not resolve font")
+            }
+            return Font(font)
+        case .mediumFont(let size):
+            guard let font = UIFont(name: "Poppins-Medium", size: size) else {
+                fatalError("Could not resolve font")
+            }
+            return Font(font)
+        case .semiBoldFont(let size):
+            guard let font = UIFont(name: "Poppins-SemiBold", size: size) else {
+                fatalError("Could not resolve font")
+            }
+            return Font(font)
+        case .boldFont(let size):
+            guard let font = UIFont(name: "Poppins-Bold", size: size) else {
+                fatalError("Could not resolve font")
+            }
+            return Font(font)
         }
-        return Font(font)
-    }
-    
-    static var semiBoldFont: Font {
-        guard let font = UIFont(name: "Poppins-SemiBold", size: UIFont.labelFontSize) else {
-            fatalError("Could not resolve font")
-        }
-        return Font(font)
-    }
-    
-    static var boldFont: Font {
-        guard let font = UIFont(name: "Poppins-Bold", size: UIFont.labelFontSize) else {
-            fatalError("Could not resolve font")
-        }
-        return Font(font)
     }
 }
 

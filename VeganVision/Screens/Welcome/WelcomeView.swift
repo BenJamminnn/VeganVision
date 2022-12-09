@@ -14,8 +14,8 @@ struct WelcomeView: View {
         VStack {
             title
             appIcon
-            Text("Welcome")
-                .font(AppFont.mediumFont)
+            Spacer()
+            welcomeButton
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .accentColor(Color.white)
@@ -24,7 +24,7 @@ struct WelcomeView: View {
     
     var title: some View {
         Text("Vegan Vision")
-            .font(AppFont.mediumFont)
+            .font(AppFont.mediumFont(size: 32).font)
     }
     
     var appIcon: some View {
@@ -32,6 +32,19 @@ struct WelcomeView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 200, height: 200)
+    }
+    
+    var welcomeButton: some View {
+        Button {
+            viewModel.getStartedPressed.send()
+        } label: {
+            Text("Get Started")
+                .font(AppFont.mediumFont(size: 22).font)
+                .foregroundColor(.black)
+        }
+        .frame(maxWidth: 300, maxHeight: 60)
+        .background(Color(green300))
+        .clipShape(Capsule())
     }
 }
 
