@@ -6,24 +6,36 @@
 //
 
 import UIKit
+import SwiftUI
+import Combine
 
-class AnalysisViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class AnalysisViewController: UIHostingController<AnalysisView> {
+    
+    private var cancellables = [AnyCancellable]()
+    
+    let viewModel: AnalysisViewModel
+    
+    init(viewModel: AnalysisViewModel) {
+        self.viewModel = viewModel
+        super.init(rootView: AnalysisView(viewModel: viewModel))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @MainActor required dynamic init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
-    */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupObservables()
+    }
 
+    private func setupObservables() {
+        viewModel.backAction
+            .receive(on: RunLoop.main)
+            .sink { [weak self] in
+                guard let self = self else { return }
+                self.navigationController?.popViewController(animated: true)
+            }
+            .store(in: &cancellables)
+    }
 }

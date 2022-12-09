@@ -10,4 +10,11 @@ import Combine
 
 class AnalysisViewModel: ObservableObject {
 
+    let backAction = PassthroughSubject<Void, Never>()
+    
+    let offendingWords: [String]
+    
+    init(offendingWords: [String]) {
+        self.offendingWords = offendingWords
+    }
 }

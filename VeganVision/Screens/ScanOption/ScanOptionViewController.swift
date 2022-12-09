@@ -94,26 +94,24 @@ class ScanOptionViewController: UIHostingController<ScanOptionView> , PHPickerVi
 
                 // Returns offending words
                 let results = self.processResult(wordResult: result)
-                if results.isEmpty {
-                    // Clean
-                } else {
-                    // Dirty
-                }
+                let analysisViewModel = AnalysisViewModel(offendingWords: results)
+                let analysisViewController = AnalysisViewController(viewModel: analysisViewModel)
+                self.navigationController?.pushViewController(analysisViewController, animated: true)
             }
         }
     }
     
-    private func processResult(wordResult: [String]) -> [String: String] {
-        var offendingWords = [String: String]()
+    private func processResult(wordResult: [String]) -> [String] {
+        var nonVeganIngredients = [String]()
         for ingredient in wordResult {
             for nonVeganIngredient in nonVeganIngredients {
                 if ingredient.lowercased().contains(nonVeganIngredient.lowercased()) {
                     if !excludedList.contains(ingredient.lowercased()) {
-                        offendingWords[ingredient] = nonVeganIngredient
+                        nonVeganIngredients.append(nonVeganIngredient)
                     }
                 }
             }
         }
-        return offendingWords
+        return nonVeganIngredients
     }
 }

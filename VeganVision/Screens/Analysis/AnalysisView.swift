@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AnalysisView: View {
+    
+    let viewModel: AnalysisViewModel
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +18,6 @@ struct AnalysisView: View {
 
 struct AnalysisView_Previews: PreviewProvider {
     static var previews: some View {
-        AnalysisView()
+        AnalysisView(viewModel: AnalysisViewModel(offendingWords: []))
     }
 }
