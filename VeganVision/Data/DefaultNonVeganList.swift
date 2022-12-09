@@ -1,18 +1,11 @@
 //
-//  NonVeganCollection.swift
+//  DefaultList.swift
 //  VeganVision
 //
-//  Created by Ben Gabay on 8/21/22.
+//  Created by Ben Gabay on 12/9/22.
 //
 
 import Foundation
-
-/// IDs to reference storyboard view controllers
-enum StoryboardIdentifiers: String {
-    case resultsFound = "ResultsFoundViewController"
-    case resultsNotFound = "ResultsNotFoundViewController"
-    case choose = "ChooseViewController"
-}
 
 /// Local List of non Vegan items
 public let nonVeganIngredients = [

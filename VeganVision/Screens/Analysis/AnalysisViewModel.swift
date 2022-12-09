@@ -11,6 +11,7 @@ import Combine
 class AnalysisViewModel: ObservableObject {
 
     let backAction = PassthroughSubject<Void, Never>()
+    let appInfoAction = PassthroughSubject<Void, Never>()
     
     let offendingWords: [String]
     

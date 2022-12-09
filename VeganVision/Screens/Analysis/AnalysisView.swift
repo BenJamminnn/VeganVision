@@ -13,11 +13,19 @@ struct AnalysisView: View {
     
     var body: some View {
         VStack {
-            title
+            HStack {
+                Text("")
+                  .frame(maxWidth: .infinity, alignment: .leading)
+                title
+                    .frame(maxWidth: .infinity, alignment: .center)
+                appInfoButton
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
                 .padding(.vertical, 22)
             mainBody()
             Spacer()
             scanAgainButton
+                .padding(.vertical, 22)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .accentColor(Color.white)
@@ -72,14 +80,21 @@ struct AnalysisView: View {
         } label: {
             Text("Scan Again")
                 .font(AppFont.mediumFont(size: 22).font)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
         }
         .frame(maxWidth: 300, maxHeight: 60)
-        .background(Color(green300))
+        .background(Color(green900))
         .clipShape(Capsule())
     }
 
-
+    var appInfoButton: some View {
+        Button {
+            viewModel.appInfoAction.send()
+        } label: {
+            Image("info.square")
+        }
+        .padding(.horizontal, 16)
+    }
 }
 
 struct AnalysisView_Previews: PreviewProvider {

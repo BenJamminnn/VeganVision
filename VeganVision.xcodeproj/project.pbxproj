@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5F303C4292969BD00E41C7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F303C3292969BD00E41C7D /* ContentView.swift */; };
 		B5F303C6292969BE00E41C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F303C5292969BE00E41C7D /* Assets.xcassets */; };
 		B5F303C9292969BE00E41C7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F303C8292969BE00E41C7D /* Preview Assets.xcassets */; };
 		B5F303D3292969BE00E41C7D /* VeganVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F303D2292969BE00E41C7D /* VeganVisionTests.swift */; };
@@ -46,9 +45,13 @@
 		B5F3042F2942C3B400E41C7D /* ScanOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042E2942C3B400E41C7D /* ScanOptionView.swift */; };
 		B5F304312942C3CD00E41C7D /* ScanOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304302942C3CD00E41C7D /* ScanOptionViewModel.swift */; };
 		B5F304362942D7F700E41C7D /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304352942D7F700E41C7D /* CameraManager.swift */; };
-		B5F3043A2942D86600E41C7D /* NonVeganCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304382942D86600E41C7D /* NonVeganCollection.swift */; };
 		B5F3043B2942D86600E41C7D /* OCRUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304392942D86600E41C7D /* OCRUtil.swift */; };
 		B5F3043D2942E63300E41C7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3043C2942E63300E41C7D /* SceneDelegate.swift */; };
+		B5F304402943E71D00E41C7D /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3043F2943E71D00E41C7D /* AppInfoViewController.swift */; };
+		B5F304422943E73400E41C7D /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304412943E73400E41C7D /* AppInfoView.swift */; };
+		B5F304442943E74C00E41C7D /* AppInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304432943E74C00E41C7D /* AppInfoViewModel.swift */; };
+		B5F304472943F35B00E41C7D /* DefaultNonVeganList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304462943F35B00E41C7D /* DefaultNonVeganList.swift */; };
+		B5F304492943F3AE00E41C7D /* NonVeganItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F304482943F3AE00E41C7D /* NonVeganItemsRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +73,6 @@
 
 /* Begin PBXFileReference section */
 		B5F303BE292969BD00E41C7D /* VeganVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeganVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5F303C3292969BD00E41C7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5F303C5292969BE00E41C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F303C8292969BE00E41C7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5F303CE292969BE00E41C7D /* VeganVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeganVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,9 +113,13 @@
 		B5F3042E2942C3B400E41C7D /* ScanOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionView.swift; sourceTree = "<group>"; };
 		B5F304302942C3CD00E41C7D /* ScanOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionViewModel.swift; sourceTree = "<group>"; };
 		B5F304352942D7F700E41C7D /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
-		B5F304382942D86600E41C7D /* NonVeganCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonVeganCollection.swift; sourceTree = "<group>"; };
 		B5F304392942D86600E41C7D /* OCRUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRUtil.swift; sourceTree = "<group>"; };
 		B5F3043C2942E63300E41C7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5F3043F2943E71D00E41C7D /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
+		B5F304412943E73400E41C7D /* AppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
+		B5F304432943E74C00E41C7D /* AppInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewModel.swift; sourceTree = "<group>"; };
+		B5F304462943F35B00E41C7D /* DefaultNonVeganList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNonVeganList.swift; sourceTree = "<group>"; };
+		B5F304482943F3AE00E41C7D /* NonVeganItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonVeganItemsRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,11 +170,11 @@
 		B5F303C0292969BD00E41C7D /* VeganVision */ = {
 			isa = PBXGroup;
 			children = (
+				B5F304452943F34800E41C7D /* Data */,
 				B5F3043C2942E63300E41C7D /* SceneDelegate.swift */,
 				B5F3042629296BBA00E41C7D /* AppDelegate.swift */,
 				B5F304342942D7EC00E41C7D /* Camera */,
 				B5F303EB292969FD00E41C7D /* Screens */,
-				B5F303C3292969BD00E41C7D /* ContentView.swift */,
 				B5F303C5292969BE00E41C7D /* Assets.xcassets */,
 				B5F304372942D85A00E41C7D /* Util */,
 				B5F303EF29296A3100E41C7D /* Fonts */,
@@ -205,6 +211,7 @@
 		B5F303EB292969FD00E41C7D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B5F3043E2943E6FD00E41C7D /* AppInfo */,
 				B5F3042B2942C37E00E41C7D /* ScanOption */,
 				B5F303EE29296A1600E41C7D /* Analysis */,
 				B5F303ED29296A1000E41C7D /* Scan */,
@@ -290,10 +297,28 @@
 		B5F304372942D85A00E41C7D /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				B5F304382942D86600E41C7D /* NonVeganCollection.swift */,
 				B5F304392942D86600E41C7D /* OCRUtil.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		B5F3043E2943E6FD00E41C7D /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3043F2943E71D00E41C7D /* AppInfoViewController.swift */,
+				B5F304412943E73400E41C7D /* AppInfoView.swift */,
+				B5F304432943E74C00E41C7D /* AppInfoViewModel.swift */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		B5F304452943F34800E41C7D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B5F304462943F35B00E41C7D /* DefaultNonVeganList.swift */,
+				B5F304482943F3AE00E41C7D /* NonVeganItemsRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,16 +469,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F304492943F3AE00E41C7D /* NonVeganItemsRepository.swift in Sources */,
 				B5F3042729296BBA00E41C7D /* AppDelegate.swift in Sources */,
 				B5F3041929296AB400E41C7D /* WelcomeView.swift in Sources */,
 				B5F3041F29296AE400E41C7D /* WelcomeViewController.swift in Sources */,
-				B5F3043A2942D86600E41C7D /* NonVeganCollection.swift in Sources */,
 				B5F3041B29296AC300E41C7D /* WelcomeViewModel.swift in Sources */,
 				B5F3042D2942C3A000E41C7D /* ScanOptionViewController.swift in Sources */,
 				B5F3042529296B3000E41C7D /* ScanViewModel.swift in Sources */,
 				B5F3042F2942C3B400E41C7D /* ScanOptionView.swift in Sources */,
-				B5F303C4292969BD00E41C7D /* ContentView.swift in Sources */,
+				B5F304422943E73400E41C7D /* AppInfoView.swift in Sources */,
+				B5F304472943F35B00E41C7D /* DefaultNonVeganList.swift in Sources */,
 				B5F3043B2942D86600E41C7D /* OCRUtil.swift in Sources */,
+				B5F304402943E71D00E41C7D /* AppInfoViewController.swift in Sources */,
 				B5F3041D29296AD600E41C7D /* AnalysisViewController.swift in Sources */,
 				B5F3042929296CC200E41C7D /* Constants.swift in Sources */,
 				B5F3041529296A8D00E41C7D /* AnalysisView.swift in Sources */,
@@ -462,6 +489,7 @@
 				B5F304312942C3CD00E41C7D /* ScanOptionViewModel.swift in Sources */,
 				B5F3043D2942E63300E41C7D /* SceneDelegate.swift in Sources */,
 				B5F3042129296AF200E41C7D /* ScanViewController.swift in Sources */,
+				B5F304442943E74C00E41C7D /* AppInfoViewModel.swift in Sources */,
 				B5F304362942D7F700E41C7D /* CameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

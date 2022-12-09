@@ -1,34 +1,32 @@
 //
-//  AnalysisViewController.swift
+//  AppInfoViewController.swift
 //  VeganVision
 //
-//  Created by Ben Gabay on 11/19/22.
+//  Created by Ben Gabay on 12/9/22.
 //
 
 import UIKit
 import SwiftUI
 import Combine
 
-class AnalysisViewController: UIHostingController<AnalysisView> {
-    
+class AppInfoViewController: UIHostingController<AppInfoView> {
+
+    let viewModel: AppInfoViewModel
     private var cancellables = [AnyCancellable]()
-    
-    let viewModel: AnalysisViewModel
-    
-    init(viewModel: AnalysisViewModel) {
+    init(viewModel: AppInfoViewModel = AppInfoViewModel()) {
         self.viewModel = viewModel
-        super.init(rootView: AnalysisView(viewModel: viewModel))
+        super.init(rootView: AppInfoView(viewModel: viewModel))
     }
     
     @MainActor required dynamic init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+                   
     override func viewDidLoad() {
         super.viewDidLoad()
         setupObservables()
     }
-
+    
     private func setupObservables() {
         viewModel.backAction
             .receive(on: RunLoop.main)
@@ -37,13 +35,7 @@ class AnalysisViewController: UIHostingController<AnalysisView> {
                 self.navigationController?.popViewController(animated: true)
             }
             .store(in: &cancellables)
-        viewModel.appInfoAction
-            .receive(on: RunLoop.main)
-            .sink { [weak self] in
-                guard let self = self else { return }
-                let appInfoViewController = AppInfoViewController()
-                self.navigationController?.pushViewController(appInfoViewController, animated: true)
-            }
-            .store(in: &cancellables)
     }
+
+
 }
