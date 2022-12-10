@@ -18,8 +18,12 @@ class ScanOptionViewController: UIHostingController<ScanOptionView> , PHPickerVi
     var chosenImportedImage: UIImage?
     var imagePicker = UIImagePickerController()
 
-    init(viewModel: ScanOptionViewModel = ScanOptionViewModel()) {
+    let nonVeganRepository: VeganListRepository
+    
+    init(viewModel: ScanOptionViewModel = ScanOptionViewModel(),
+         nonVeganRepository: VeganListRepository = VeganListRepository()) {
         self.viewModel = viewModel
+        self.nonVeganRepository = nonVeganRepository
         super.init(rootView: ScanOptionView(viewModel: viewModel))
     }
     
@@ -110,16 +114,19 @@ class ScanOptionViewController: UIHostingController<ScanOptionView> , PHPickerVi
     }
     
     private func processResult(wordResult: [String]) -> [String] {
-        var nonVeganIngredients = [String]()
+        var offendingWords = [String: String]()
         for ingredient in wordResult {
-            for nonVeganIngredient in nonVeganIngredients {
+            for nonVeganIngredient in nonVeganRepository.currentEntries() {
                 if ingredient.lowercased().contains(nonVeganIngredient.lowercased()) {
                     if !excludedList.contains(ingredient.lowercased()) {
-                        nonVeganIngredients.append(nonVeganIngredient)
+                        offendingWords[ingredient] = nonVeganIngredient
                     }
                 }
             }
         }
-        return nonVeganIngredients
+        let violations = Set(offendingWords.compactMap {
+            $0.value
+        })
+        return Array(violations)
     }
 }
