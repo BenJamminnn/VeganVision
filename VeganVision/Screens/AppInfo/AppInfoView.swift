@@ -10,13 +10,22 @@ import SwiftUI
 struct AppInfoView: View {
     
     let viewModel: AppInfoViewModel
+    @State private var presentAlert = false
+    @State private var toAdd: String = ""
+    @State private var toDelete: String = ""
 
     var body: some View {
         VStack {
             HStack {
                 backButton
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
                 title
+                    .frame(maxWidth: .infinity, alignment: .center)
+                Text("")
+                    .frame(maxWidth: .infinity, alignment: .trailing)
             }
+            .padding(.vertical, 22)
             description
             nonVeganItemsList
                 .padding()
@@ -40,7 +49,7 @@ struct AppInfoView: View {
     
     var nonVeganItemsList: some View {
         ScrollView {
-            ForEach(nonVeganIngredients, id: \.self) { word in
+            ForEach(viewModel.currentNonVeganList, id: \.self) { word in
                 Text(word)
                     .font(AppFont.mediumFont(size: 18).font)
                     .frame(maxWidth: .infinity)
@@ -68,7 +77,7 @@ struct AppInfoView: View {
     
     var addButton: some View {
         Button {
-            viewModel.addEntryAction.send("Hello")
+            presentAlert = !presentAlert
         } label: {
             Text("Add Entry")
                 .font(AppFont.mediumFont(size: 22).font)
@@ -77,6 +86,18 @@ struct AppInfoView: View {
         .frame(minWidth: 170, maxHeight: 60)
         .background(Color(green800))
         .clipShape(Capsule())
+        .alert("New Entry", isPresented: $presentAlert, actions: {
+            // Any view other than Button would be ignored
+            TextField("Entry", text: $toAdd)
+            Button("Cancel", role: .cancel, action: {
+                presentAlert = !presentAlert
+            })
+            Button("Add", action: {
+                viewModel.addEntryAction.send(toAdd)
+            })
+        }, message: {
+            Text("Enter a new entry to be considered when scanning images")
+        })
     }
     
     var resetButton: some View {

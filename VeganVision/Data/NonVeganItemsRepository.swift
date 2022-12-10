@@ -20,8 +20,15 @@ class VeganListRepository: VeganListRepositoryable {
     private let listKey = "veganListKey"
     private let defaults = UserDefaults.standard
 
+    init() {
+        let currentEntries = defaults.object(forKey: listKey) as? [String] ?? [String]()
+        if currentEntries.isEmpty {
+            defaults.set(nonVeganIngredients, forKey: listKey)
+        }
+    }
+    
     func addEntry(entry: String) {
-        guard entry.isEmpty else { return }
+        guard !entry.isEmpty else { return }
         var currentList = defaults.object(forKey: listKey) as? [String] ?? [String]()
         currentList.append(entry)
         defaults.set(currentList, forKey: listKey)
@@ -29,7 +36,7 @@ class VeganListRepository: VeganListRepositoryable {
     
     func removeEntry(entry: String) {
         guard entry.isEmpty else { return }
-        var existingList = defaults.object(forKey: listKey) as? [String] ?? [String]()
+        let existingList = defaults.object(forKey: listKey) as? [String] ?? [String]()
         if !existingList.contains(entry) {
             // TODO: throw error
         }
@@ -42,11 +49,6 @@ class VeganListRepository: VeganListRepositoryable {
     }
     
     func currentEntries() -> [String] {
-        var currentEntries = defaults.object(forKey: listKey) as? [String] ?? [String]()
-        if currentEntries.isEmpty {
-            resetEntries()
-            currentEntries = defaults.object(forKey: listKey) as? [String] ?? [String]()
-        }
-        return currentEntries
+        defaults.object(forKey: listKey) as? [String] ?? [String]()
     }
 }
