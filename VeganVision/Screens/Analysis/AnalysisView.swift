@@ -13,14 +13,8 @@ struct AnalysisView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("")
-                  .frame(maxWidth: .infinity, alignment: .leading)
-                title
-                    .frame(maxWidth: .infinity, alignment: .center)
-                appInfoButton
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-            }
+            title
+                .frame(maxWidth: .infinity, alignment: .center)
                 .padding(.vertical, 22)
             mainBody()
             Spacer()
@@ -85,15 +79,6 @@ struct AnalysisView: View {
         .frame(maxWidth: 300, maxHeight: 60)
         .background(Color(green900))
         .clipShape(Capsule())
-    }
-
-    var appInfoButton: some View {
-        Button {
-            viewModel.appInfoAction.send()
-        } label: {
-            Image("info.square")
-        }
-        .padding(.horizontal, 16)
     }
 }
 

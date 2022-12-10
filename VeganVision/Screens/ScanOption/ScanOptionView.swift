@@ -14,7 +14,15 @@ struct ScanOptionView: View {
     var body: some View {
         VStack {
             VStack {
-                title
+                HStack {
+                    Text("")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    title
+                        .frame(minWidth: 200, maxHeight: 20, alignment: .center)
+                    appInfoButton
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+                    .padding(.vertical, 22)
                 subtitle
             }
             .padding(.vertical, 22)
@@ -34,7 +42,7 @@ struct ScanOptionView: View {
     
     var title: some View {
         Text("Upload an Image")
-            .font(AppFont.semiBoldFont(size: 26).font)
+            .font(AppFont.semiBoldFont(size: 22).font)
     }
     
     var subtitle: some View {
@@ -69,6 +77,15 @@ struct ScanOptionView: View {
             }
         }
         .padding()
+    }
+
+    var appInfoButton: some View {
+        Button {
+            viewModel.appInfoAction.send()
+        } label: {
+            Image("info.square")
+        }
+        .padding(.horizontal, 16)
     }
 }
 

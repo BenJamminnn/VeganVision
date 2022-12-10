@@ -55,6 +55,14 @@ class ScanOptionViewController: UIHostingController<ScanOptionView> , PHPickerVi
                 self.present(picker, animated: true)
             }
             .store(in: &cancellables)
+        viewModel.appInfoAction
+            .receive(on: RunLoop.main)
+            .sink { [weak self] in
+                guard let self = self else { return }
+                let appInfoViewController = AppInfoViewController()
+                self.navigationController?.pushViewController(appInfoViewController, animated: true)
+            }
+            .store(in: &cancellables)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

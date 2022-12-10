@@ -12,4 +12,5 @@ class ScanOptionViewModel: ObservableObject {
 
     let scanAction = PassthroughSubject<Void, Never>()
     let importAction = PassthroughSubject<Void, Never>()
+    let appInfoAction = PassthroughSubject<Void, Never>()
 }
