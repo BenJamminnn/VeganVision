@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppInfoView: View {
     
-    let viewModel: AppInfoViewModel
+    @ObservedObject var viewModel: AppInfoViewModel
     @State private var presentAlert = false
     @State private var toAdd: String = ""
     @State private var toDelete: String = ""
@@ -27,6 +27,9 @@ struct AppInfoView: View {
             }
             .padding(.vertical, 22)
             description
+            if viewModel.error != nil {
+                error
+            }
             nonVeganItemsList
                 .padding()
             buttons
@@ -53,6 +56,7 @@ struct AppInfoView: View {
                 Text(word)
                     .font(AppFont.mediumFont(size: 18).font)
                     .frame(maxWidth: .infinity)
+                    .padding(.vertical, 3)
             }
         }
         .frame(maxWidth: .infinity)
@@ -73,6 +77,16 @@ struct AppInfoView: View {
             addButton
             resetButton
         }
+        .padding(.vertical, 12)
+    }
+    
+    var error: some View {
+        Text(viewModel.error?.description ?? "")
+            .padding()
+            .cornerRadius(18)
+            .font(AppFont.mediumFont(size: 18).font)
+            .background(Color(red300))
+            .clipShape(Capsule())
     }
     
     var addButton: some View {

@@ -61,6 +61,16 @@ extension UIColor {
 
 // Color
 
+let red50 = UIColor(rgb: 0xFFEBEE)
+let red100 = UIColor(rgb: 0xFFCDD2)
+let red200 = UIColor(rgb: 0xEF9A9A)
+let red300 = UIColor(rgb: 0xE57373)
+let red400 = UIColor(rgb: 0xEF5350)
+let red500 = UIColor(rgb: 0xF44336)
+let red600 = UIColor(rgb: 0xE53935)
+let red700 = UIColor(rgb: 0xD32F2F)
+let red800 = UIColor(rgb: 0xC62828)
+
 let green50 = UIColor(rgb: 0xE8F5E9)
 let green100 = UIColor(rgb: 0xC8E6C9)
 let green200 = UIColor(rgb: 0xA5D6A7)

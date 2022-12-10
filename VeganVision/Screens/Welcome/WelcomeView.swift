@@ -45,6 +45,7 @@ struct WelcomeView: View {
         .frame(maxWidth: 300, maxHeight: 60)
         .background(Color(green300))
         .clipShape(Capsule())
+        .padding(.vertical, 12)
     }
 }
 

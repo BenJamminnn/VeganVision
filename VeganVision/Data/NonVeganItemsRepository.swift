@@ -49,6 +49,6 @@ class VeganListRepository: VeganListRepositoryable {
     }
     
     func currentEntries() -> [String] {
-        defaults.object(forKey: listKey) as? [String] ?? [String]()
+        defaults.object(forKey: listKey) as? [String] ?? [String]().sorted()
     }
 }
