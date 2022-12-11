@@ -14,7 +14,7 @@ A non vegan list is available for edit by the user and will be persisted across 
 
 Welcome: 
 
-<img width="384" alt="VeganVision_Welcome" src="https://user-images.githubusercontent.com/5061628/206880216-bcbfb6e9-c176-4c3f-a5fa-99b2de16f738.png">
+<img width="200" alt="VeganVision_Welcome" src="https://user-images.githubusercontent.com/5061628/206880216-bcbfb6e9-c176-4c3f-a5fa-99b2de16f738.png">
 
 ScanOption: 
 
