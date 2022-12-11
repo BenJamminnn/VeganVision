@@ -18,15 +18,15 @@ Welcome:
 
 ScanOption: 
 
-<img width="391" alt="VeganVision_ScanOption" src="https://user-images.githubusercontent.com/5061628/206880221-2a9d9480-be20-44b3-b660-4e36034292be.png">
+<img width="200" alt="VeganVision_ScanOption" src="https://user-images.githubusercontent.com/5061628/206880221-2a9d9480-be20-44b3-b660-4e36034292be.png">
 
 Analysis:
 
-<img width="392" alt="VeganVision_Analysis" src="https://user-images.githubusercontent.com/5061628/206880225-7ac78ced-4125-4e41-96dd-39a5b75a891b.png">
+<img width="200" alt="VeganVision_Analysis" src="https://user-images.githubusercontent.com/5061628/206880225-7ac78ced-4125-4e41-96dd-39a5b75a891b.png">
 
 AppInfo: 
 
-<img width="394" alt="VeganVision_AppInfo" src="https://user-images.githubusercontent.com/5061628/206880232-526b6a9c-0a3f-465e-ab62-436d09da2e74.png">
+<img width="200" alt="VeganVision_AppInfo" src="https://user-images.githubusercontent.com/5061628/206880232-526b6a9c-0a3f-465e-ab62-436d09da2e74.png">
 
 # Details
 
