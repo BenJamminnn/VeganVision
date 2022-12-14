@@ -18,13 +18,13 @@ struct WelcomeView: View {
             welcomeButton
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .accentColor(Color.white)
         .background(Color(green500))
     }
     
     var title: some View {
         Text("Vegan Vision")
             .font(AppFont.mediumFont(size: 32).font)
+            .foregroundColor(.black)
     }
     
     var appIcon: some View {
