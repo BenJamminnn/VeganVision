@@ -35,7 +35,7 @@ struct AppInfoView: View {
             buttons
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .accentColor(Color.white)
+        .accentColor(Color.black)
         .background(Color(green500))
     }
     
@@ -56,6 +56,7 @@ struct AppInfoView: View {
                 Text(word)
                     .font(AppFont.mediumFont(size: 18).font)
                     .frame(maxWidth: .infinity)
+                    .foregroundColor(.black)
                     .padding(.vertical, 3)
             }
         }

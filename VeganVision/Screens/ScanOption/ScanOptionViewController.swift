@@ -16,9 +16,9 @@ class ScanOptionViewController: UIHostingController<ScanOptionView> , PHPickerVi
     var cancellables = [AnyCancellable]()
 
     var chosenImportedImage: UIImage?
-    var imagePicker = UIImagePickerController()
+    private let imagePicker = UIImagePickerController()
 
-    let nonVeganRepository: VeganListRepository
+    private let nonVeganRepository: VeganListRepository
     
     init(viewModel: ScanOptionViewModel = ScanOptionViewModel(),
          nonVeganRepository: VeganListRepository = VeganListRepository()) {

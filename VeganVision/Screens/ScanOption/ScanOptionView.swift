@@ -36,18 +36,20 @@ struct ScanOptionView: View {
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .accentColor(Color.white)
+        .accentColor(.black)
         .background(Color(green500))
     }
     
     var title: some View {
         Text("Upload an Image")
             .font(AppFont.semiBoldFont(size: 22).font)
+            .foregroundColor(.black)
     }
     
     var subtitle: some View {
         Text("Utilize an image to be scanned against a database of non-vegan items.")
             .font(AppFont.mediumFont(size: 12).font)
+            .foregroundColor(.black)
     }
     
     var importButton: some View {
