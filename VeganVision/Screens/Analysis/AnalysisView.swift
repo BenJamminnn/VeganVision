@@ -60,12 +60,14 @@ struct AnalysisView: View {
             .padding()
             .font(AppFont.semiBoldFont(size: 26).font)
             .background(Color(green300))
+            .foregroundColor(.black)
             .cornerRadius(20)
     }
     
     var title: some View {
         Text("Analysis")
             .font(AppFont.semiBoldFont(size: 26).font)
+            .foregroundColor(.black)
     }
     
     var scanAgainButton: some View {
