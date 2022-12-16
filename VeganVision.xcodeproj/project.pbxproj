@@ -36,9 +36,6 @@
 		B5F3041B29296AC300E41C7D /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041A29296AC300E41C7D /* WelcomeViewModel.swift */; };
 		B5F3041D29296AD600E41C7D /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041C29296AD600E41C7D /* AnalysisViewController.swift */; };
 		B5F3041F29296AE400E41C7D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3041E29296AE400E41C7D /* WelcomeViewController.swift */; };
-		B5F3042129296AF200E41C7D /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042029296AF200E41C7D /* ScanViewController.swift */; };
-		B5F3042329296B2200E41C7D /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042229296B2200E41C7D /* ScanView.swift */; };
-		B5F3042529296B3000E41C7D /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042429296B3000E41C7D /* ScanViewModel.swift */; };
 		B5F3042729296BBA00E41C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042629296BBA00E41C7D /* AppDelegate.swift */; };
 		B5F3042929296CC200E41C7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042829296CC200E41C7D /* Constants.swift */; };
 		B5F3042D2942C3A000E41C7D /* ScanOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3042C2942C3A000E41C7D /* ScanOptionViewController.swift */; };
@@ -104,9 +101,6 @@
 		B5F3041A29296AC300E41C7D /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		B5F3041C29296AD600E41C7D /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
 		B5F3041E29296AE400E41C7D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		B5F3042029296AF200E41C7D /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
-		B5F3042229296B2200E41C7D /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
-		B5F3042429296B3000E41C7D /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
 		B5F3042629296BBA00E41C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F3042829296CC200E41C7D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5F3042C2942C3A000E41C7D /* ScanOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionViewController.swift; sourceTree = "<group>"; };
@@ -214,7 +208,6 @@
 				B5F3043E2943E6FD00E41C7D /* AppInfo */,
 				B5F3042B2942C37E00E41C7D /* ScanOption */,
 				B5F303EE29296A1600E41C7D /* Analysis */,
-				B5F303ED29296A1000E41C7D /* Scan */,
 				B5F303EC29296A0500E41C7D /* Welcome */,
 				B5F3042829296CC200E41C7D /* Constants.swift */,
 			);
@@ -229,16 +222,6 @@
 				B5F3041E29296AE400E41C7D /* WelcomeViewController.swift */,
 			);
 			path = Welcome;
-			sourceTree = "<group>";
-		};
-		B5F303ED29296A1000E41C7D /* Scan */ = {
-			isa = PBXGroup;
-			children = (
-				B5F3042029296AF200E41C7D /* ScanViewController.swift */,
-				B5F3042229296B2200E41C7D /* ScanView.swift */,
-				B5F3042429296B3000E41C7D /* ScanViewModel.swift */,
-			);
-			path = Scan;
 			sourceTree = "<group>";
 		};
 		B5F303EE29296A1600E41C7D /* Analysis */ = {
@@ -475,7 +458,6 @@
 				B5F3041F29296AE400E41C7D /* WelcomeViewController.swift in Sources */,
 				B5F3041B29296AC300E41C7D /* WelcomeViewModel.swift in Sources */,
 				B5F3042D2942C3A000E41C7D /* ScanOptionViewController.swift in Sources */,
-				B5F3042529296B3000E41C7D /* ScanViewModel.swift in Sources */,
 				B5F3042F2942C3B400E41C7D /* ScanOptionView.swift in Sources */,
 				B5F304422943E73400E41C7D /* AppInfoView.swift in Sources */,
 				B5F304472943F35B00E41C7D /* DefaultNonVeganList.swift in Sources */,
@@ -485,10 +467,8 @@
 				B5F3042929296CC200E41C7D /* Constants.swift in Sources */,
 				B5F3041529296A8D00E41C7D /* AnalysisView.swift in Sources */,
 				B5F3041729296AA100E41C7D /* AnalysisViewModel.swift in Sources */,
-				B5F3042329296B2200E41C7D /* ScanView.swift in Sources */,
 				B5F304312942C3CD00E41C7D /* ScanOptionViewModel.swift in Sources */,
 				B5F3043D2942E63300E41C7D /* SceneDelegate.swift in Sources */,
-				B5F3042129296AF200E41C7D /* ScanViewController.swift in Sources */,
 				B5F304442943E74C00E41C7D /* AppInfoViewModel.swift in Sources */,
 				B5F304362942D7F700E41C7D /* CameraManager.swift in Sources */,
 			);
