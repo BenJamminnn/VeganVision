@@ -45,7 +45,7 @@ struct AppInfoView: View {
     }
     
     var description: some View {
-        Text("Vegan Vision uses Apple's built in Optical Character Recognition software to spot non vegan ingredients. The list of non vegan items is from PETA. You may add or remove any entry as desired.")
+        Text("Vegan Vision uses Apple's built in Optical Character Recognition software to spot non vegan ingredients. The list of non vegan items is from PETA. You may add ingredients as desired.")
             .font(AppFont.mediumFont(size: 14).font)
             .padding()
     }
