@@ -14,7 +14,7 @@ enum ScanError: Error {
     case noResults
     case scanError
     
-    func description() -> String {
+    var description: String {
         switch self {
         case .imageMissing:
             return "No input image found"

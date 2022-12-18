@@ -93,6 +93,10 @@ class ScanOptionViewController: UIHostingController<ScanOptionView> , PHPickerVi
         }
     }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
+    }
+    
     private func analyzeImage(image: UIImage) {
         OCRUtil.recognizeText(image: image) { [weak self] result, error in
             guard let self = self else { return }
