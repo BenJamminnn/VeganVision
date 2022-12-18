@@ -14,7 +14,7 @@ enum ScanError: Error {
     case noResults
     case scanError
     
-    func description() -> String {
+    var description: String {
         switch self {
         case .imageMissing:
             return "No input image found"
@@ -48,7 +48,6 @@ class OCRUtil {
             let text = observations.compactMap { observation in
                 return observation.topCandidates(1).first?.string
             }
-            print("Text 1: ", text)
             
             if text.isEmpty {
                 completion(nil, .noResults)

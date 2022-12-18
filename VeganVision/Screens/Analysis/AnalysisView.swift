@@ -38,7 +38,7 @@ struct AnalysisView: View {
     
     var populatedView: some View {
         VStack {
-            Text("\(viewModel.offendingWords.count) non vegan ingredients found!")
+            Text(viewModel.offendingWordsText)
                 .font(AppFont.mediumFont(size: 18).font)
                 .padding()
 
